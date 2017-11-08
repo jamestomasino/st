@@ -9,10 +9,6 @@ Light, stable, simple and fast. **tmux** brings in all other needed features.
 - **solarized** dark color scheme.
 - **transparency** support added.
 
-## Screen
-
-![Screenshot](https://raw.github.com/l3pp4rd/st/master/screen.png)
-
 ## Requirements
 
 In order to build st you need:
