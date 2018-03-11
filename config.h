@@ -60,73 +60,34 @@ static unsigned int tabspaces = 4;
 
 /* background opacity */
 static const int alpha = 0xcd;
-
-/**
- * Archery colorscheme
- */
 static const char *colorname[] = {
-    /* solarized dark */
-    "#25272C",  /*   0: black    */
-    "#BA2A2A",  /*   1: red      */
-    "#008542",  /*   2: green    */
-    "#F07D30",  /*   3: yellow   */
-    "#0088CC",  /*   4: blue     */
-    "#8D4888",  /*   5: magenta  */
-    "#006596",  /*   6: cyan     */
-    "#53586F",  /*   7: white    */
-    "#345151",  /*   8: brblack  */
-    "#C95F5F",  /*   9: brred    */
-    "#73BA25",  /*  10: brgreen  */
-    "#EAC06E",  /*  11: bryellow */
-    "#81A3CF",  /*  12: brblue   */
-    "#B589C2",  /*  13: brmagenta*/
-    "#25B8A5",  /*  14: brcyan   */
-    "#F6F9FC",  /*  15: brwhite  */
-
-    [255] = 0,  /* other colors follow */
-
-    "#000000",  /* 256: background */
-    "#fbfbfb",  /* 257: foreground */
+  "#282a2e", /* base01 */
+  "#cc6666", /* base08 */
+  "#b5bd68", /* base0B */
+  "#f0c674", /* base0A */
+  "#81a2be", /* base0D */
+  "#a3685a", /* base0F */
+  "#8abeb7", /* base0C */
+  "#e0e0e0", /* base06 */
+  "#1d1f21", /* base00 */
+  "#de935f", /* base09 */
+  "#373b41", /* base02 */
+  "#969896", /* base03 */
+  "#b4b7b4", /* base04 */
+  "#b294bb", /* base0E */
+  "#c5c8c6", /* base05 */
+  "#ffffff", /* base07 */
 };
 
-/**
- * Solarized dark scheme (http://ethanschoonover.com/solarized)
- * Terminal colors (16 first used in escape sequence)
- */
-// static const char *colorname[] = {
-//     /* solarized dark */
-//     "#073642",  /*   0: black    */
-//     "#dc322f",  /*   1: red      */
-//     "#859900",  /*   2: green    */
-//     "#b58900",  /*   3: yellow   */
-//     "#268bd2",  /*   4: blue     */
-//     "#d33682",  /*   5: magenta  */
-//     "#2aa198",  /*   6: cyan     */
-//     "#eee8d5",  /*   7: white    */
-//     "#002b36",  /*   8: brblack  */
-//     "#cb4b16",  /*   9: brred    */
-//     "#586e75",  /*  10: brgreen  */
-//     "#657b83",  /*  11: bryellow */
-//     "#839496",  /*  12: brblue   */
-//     "#6c71c4",  /*  13: brmagenta*/
-//     "#93a1a1",  /*  14: brcyan   */
-//     "#fdf6e3",  /*  15: brwhite  */
-//
-//     [255] = 0,  /* other colors follow */
-//
-//     "#000000",  /* 256: background */
-//     "#fbfbfb",  /* 257: foreground */
-// };
-
-/**
- * Default colors (colorname index)
- * foreground, background, cursor
- */
-static unsigned int defaultfg = 257;
-static unsigned int defaultbg = 256;
+/*
+* Default colors (colorname index)
+* foreground, background, cursor, reverse
+* cursor
+*/
+static unsigned int defaultfg = 12;
+static unsigned int defaultbg = 8;
 static unsigned int defaultcs = 14;
-static unsigned int defaultrcs = 257;
-
+static unsigned int defaultrcs = 15;
 /*
  * Default shape of cursor
  * 2: Block ("█")
